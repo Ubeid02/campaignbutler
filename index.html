@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campaign Butler - Win Your Next Election</title>
+    <link rel="stylesheet" href="assets\css\styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">Campaign<span>Butler</span></div>
+        <ul>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#start">Quick Start</a></li>
+            <li><a href="#support">Support</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact" class="btn-primary">Connect →</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Win Your Next Election with Campaign Butler's All-in-One Solution</h1>
+            <p>From digital presence to boots on the ground, we deliver the tools, technology, and expertise that modern campaigns need to connect with voters and secure victory.</p>
+            
+            <div class="domain-search">
+                <input type="text" placeholder="Type here...">
+                <input type="text" placeholder=".vote" style="max-width: 150px;">
+                <button class="btn-primary">Search →</button>
+            </div>
+
+            <div class="hero-links">
+                <a href="#launch" class="hero-link-btn primary">Launch Your Campaign Today →</a>
+                <div class="link-divider"></div>
+                <div class="hero-link-group">
+                    <a href="#pricing" class="hero-link-text">See Our Pricing →</a>
+                    <span class="link-separator">|</span>
+                    <a href="#demo" class="hero-link-text">Schedule a Demo →</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-visual">
+            <div style="width: 400px; height: 500px; display: flex; align-items: center; justify-content: center; font-size: 5rem;">
+                <img src="assets\imgs\Group 1.png" alt="" srcset="">
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="testimonial">
+        <h2>Trusted by Winning Candidates</h2>
+        
+        <div class="testimonial-slider">
+            <!-- Previous Button -->
+            <button class="slider-btn prev-btn" onclick="changeSlide(-1)">
+                <span>←</span>
+            </button>
+
+            <!-- Testimonial Cards Container -->
+            <div class="testimonial-carousel">
+                <!-- Card 1 -->
+                <div class="testimonial-card-wrapper left" data-position="left">
+                    <div class="testimonial-card">
+                        <div class="card-image">
+                            <img src="assets\imgs\Rectangle.png" alt="Candidate">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 (Center/Active) -->
+                <div class="testimonial-card-wrapper center active" data-position="center">
+                    <div class="testimonial-card main-card">
+                        <div class="video-section">
+                            <img src="assets\imgs\Rectangle (1).png" alt="Main testimonial">
+                            <div class="play-button-overlay">
+                                <div class="play-icon">▶</div>
+                            </div>
+                            <div class="growth-indicator">
+                                <svg width="80" height="40" viewBox="0 0 80 40">
+                                    <polyline points="0,35 20,28 40,15 60,10 80,5" 
+                                            fill="none" 
+                                            stroke="#ff2d55" 
+                                            stroke-width="2"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="testimonial-text">
+                            <p class="testimonial-quote">"The volunteer walking app revolutionized our ground game. We knocked 40% more doors with the same number of volunteers."</p>
+                            <p class="testimonial-author">Michael Thompson | County Commissioner</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="testimonial-card-wrapper right" data-position="right">
+                    <div class="testimonial-card">
+                        <div class="card-image">
+                            <img src="assets\imgs\Rectangle (2).png" alt="Candidate">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Next Button -->
+            <button class="slider-btn next-btn" onclick="changeSlide(1)">
+                <span>→</span>
+            </button>
+        </div>
+
+        <!-- Slide Indicators -->
+        <div class="slide-indicators">
+            <span class="indicator" onclick="goToSlide(0)"></span>
+            <span class="indicator active" onclick="goToSlide(1)"></span>
+            <span class="indicator" onclick="goToSlide(2)"></span>
+        </div>
+    </section>
+
+    <!-- Partner Logos -->
+    <section class="part">
+        <div class="partners">
+            <div class="partner-item">
+                <div class="partner-text">HUMAN<br>RIGHTS<br>CAMPAIGN</div>
+            </div>
+            <div class="partner-item">
+                <div class="partner-text">Planned<br>Parenthood<br><span style="font-size: 0.7em;">Care. No matter what.</span></div>
+            </div>
+            <div class="partner-item">
+                <div class="partner-text">NCCS<br><span style="font-size: 0.6em;">The National Council<br>for Climate Science</span></div>
+            </div>
+            <div class="partner-item">
+                <div class="partner-text">U.S. Immigration<br>and Customs<br>Enforcement</div>
+            </div>
+            <div class="partner-item">
+                <div class="partner-text">NARAL<br><span style="font-size: 0.7em;">PRO-CHOICE AMERICA</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Form Section -->
+    <section class="form-section">
+        <div class="form-content">
+            <h2>Ready to Launch Your<br><span>Winning Campaign?</span></h2>
+            <p>Get started today with Campaign Butler and receive:</p>
+            <ul>
+                <li><strong>Same-day</strong> domain and email setup</li>
+                <li><strong>Professional</strong> website within 72 hours</li>
+                <li><strong>Dedicated</strong> campaign strategist</li>
+                <li><strong>Complete</strong> onboarding and training</li>
+            </ul>
+        </div>
+
+        <form>
+            <input type="text" placeholder="First Name" required>
+            <input type="text" placeholder="Last Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="tel" placeholder="Phone Number (optional)">
+            <label>
+                <input type="checkbox" required>
+                <span>I agree to receive text messages from Campaign Butler. By checking this box, you are providing your phone number.</span>
+            </label>
+            <button type="submit" class="btn-primary">Launch My Campaign →</button>
+        </form>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-image">
+            <div class="imgs">
+                <img src="assets\imgs\Group 3.png" alt="" srcset="">
+            </div>
+        </div>
+        <div class="cta-content">
+            <h2>Visibility Starts Here. Victory Follows.</h2>
+            <p>Don't leave your campaign success to chance. Partner with the experts who understand what it takes to win in today's complex political landscape.</p>
+            <button class="btn-primary">Get Started Today →</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>Campaign<span>Butler</span></h3>
+                <p>Win Your Next Election with Campaign Butler's All-in-One Solution</p>
+            </div>
+            <div class="footer-links">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#privacy">Privacy Policy</a></li>
+                    <li><a href="#terms">Terms & Conditions</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="#support">Support Center</a></li>
+                    <li><a href="#resources">Campaign Resources</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 Campaign Butler. All Rights Reserved.</p>
+            <div class="social-links">
+                <a href="#">📷</a>
+                <a href="#">f</a>
+                <a href="#">▶</a>
+                <a href="#">𝕏</a>
+                <a href="#">♪</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
